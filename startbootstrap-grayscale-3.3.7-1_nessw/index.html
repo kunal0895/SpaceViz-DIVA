@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>NBA Analysis</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+
+    <!-- Theme CSS -->
+    <link href="css/grayscale.min.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+                    Menu <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand page-scroll" href="#page-top">
+                    <i class="fa fa-play-circle"></i> SpaceVis
+                </a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+                <ul class="nav navbar-nav">
+                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#about">Heat Map</a>
+                    </li>
+                    <!--<li>
+                        <a class="page-scroll" href="#download">Download</a>
+                    </li> -->
+                    <li>
+                        <a class="page-scroll" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Intro Header -->
+    <header class="intro">
+        <div class="intro-body">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+                        <h1 class="brand-heading">SpaceVis: NBA Spacing Visualizer</h1>
+                        <p class="intro-text">Ever wonder how good a team's spacing is?
+                            <br>Enter a lineup and find out!.</p>
+                        <a href="#about" class="btn btn-circle page-scroll">
+                            <i class="fa fa-angle-double-down animated"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="container content-section text-center">
+    <div class="row">
+      <div class="col-md-6">
+    <br>
+        <div class="row">
+      Input floor configuration manually
+        </div>
+        <br>
+        <br>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="row">
+              <div class="form-group">
+                <label for="sel1">Player text here:</label>
+                <select class="form-control" id="sel1">
+                   
+            </select>
+          </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="row">
+              <div class="form-check">
+            <input class="form-check-input" name="type" type="checkbox" value="1" id="defaultCheck1">
+            <label class="form-check-label" for="defaultCheck1">
+                  Offense
+                </label>
+              </div>
+            </div>
+            <br>
+            <div class="row">
+              <div class="form-check">
+            <input class="form-check-input" type="checkbox" name="type", value="2" id="defaultCheck2">
+            <label class="form-check-label" for="defaultCheck2">
+              Defense
+            </label>
+              </div>
+            </div>
+          </div>
+        </div>
+    <br>
+      </div>
+      <div class="col-md-6">
+    <br>
+        <div class="row">
+      <input class="btn btn-primary" type="submit" value="Upload a floor configuration here">
+        </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+  </div>
+</div>
+
+
+<!-- <div class="row">
+
+  <div class="col-md-6">
+    <div class="row" style="height: 100%; width: 500px">
+    <div class="row" id="courtField" style="width: 500px;cursor: pointer;">
+    <div class="col-md-12" id="firstPart">
+    </div>
+ 
+     </div>
+
+
+      </div>
+  </div>
+
+  <div class="col-md-6">
+        <div class="row" style="height: 100%; width: 600px">
+    <div class="row" id="courtField2" style="width: 600px;cursor: pointer;">
+    <div class="col-md-6" id="firstPart2">
+    </div>
+    <div class="col-md-6" id="secondPart2">
+    </div>
+    </div>
+
+
+      </div>
+  </div>
+  
+</div> 
+<div id="chart1" style="width: 500px; cursor: pointer;"></div>
+<div id="chart2" style="width: 500px; cursor: pointer;"></div>
+-->
+<div class="row row-no-margin">
+        <div class="col-xs-12 col-sm-6 col-no-padding">
+			<div id="chart1" style="width: 500px; cursor: pointer;"></div>
+        </div>
+       <div class="col-xs-12 col-sm-6 col-no-padding">
+			<div id="chart2" style="width: 500px; cursor: pointer;"></div>	
+        </div>
+</div>
+      
+
+    </section>
+
+    <!-- Download Section -->
+    <!-- <section id="download" class="content-section text-center">
+        <div class="download-section">
+            <div class="container">
+                <div class="col-lg-8 col-lg-offset-2">
+                    <h2>Download Grayscale</h2>
+                    <p>You can download Grayscale for free on the preview page at Start Bootstrap.</p>
+                    <a href="http://startbootstrap.com/template-overviews/grayscale/" class="btn btn-default btn-lg">Visit Download Page</a>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- Contact Section -->
+    <section id="contact" class="container content-section text-center">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+                <h2>Contact Us</h2>
+                <p>Feel free to email us to provide some feedback on our heat map visualization, give us suggestions, or to just say hello!</p>
+                <p><a href="mailto:nk374@rutgers.edu">email</a>
+                </p>
+                <!--<ul class="list-inline banner-social-buttons">
+                    <li>
+                        <a href="https://twitter.com/SBootstrap" class="btn btn-default btn-lg"><i class="fa fa-twitter fa-fw"></i> <span class="network-name">Twitter</span></a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/IronSummitMedia/startbootstrap" class="btn btn-default btn-lg"><i class="fa fa-github fa-fw"></i> <span class="network-name">Github</span></a>
+                    </li>
+                    <li>
+                        <a href="https://plus.google.com/+Startbootstrap/posts" class="btn btn-default btn-lg"><i class="fa fa-google-plus fa-fw"></i> <span class="network-name">Google+</span></a>
+                    </li>
+                </ul> -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <!-- <div id="map"></div> -->
+
+    <!-- Footer -->
+    <footer>
+        <div class="container text-center">
+            <p>Copyright &copy; NBA Analysis 2018</p>
+        </div>
+    </footer>
+
+    <!-- jQuery -->
+    <script src="vendor/jquery/jquery.js"></script>
+
+	<!-- D3.js -->
+	<script type="text/javascript" src="http://d3js.org/d3.v3.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+
+    <!-- Google Maps API Key - Use your own API key to enable the map feature. More information on the Google Maps API can be found at https://developers.google.com/maps/ -->
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCRngKslUGJTlibkQ3FkfTxj3Xss1UlZDA&sensor=false"></script>
+
+    <!-- Theme JavaScript -->
+    <script src="js/grayscale.min.js"></script>
+
+	<!-- Initial Grid -->
+	<script type="text/javascript" src="blank_grid.js"></script>
+	
+	<script type="text/javascript" src="partial_grid.js"></script>
+	
+	<!-- Final Grid -->
+	<script type="text/javascript" src="nba.js"></script>
+
+
+<script type="text/javascript">
+
+    $(document).ready(function() {
+
+        $('input[type="checkbox"]').on('change', function() {
+    $('input[name="' + this.name + '"]').not(this).prop('checked', false);
+});
+        var nrows = 47;
+        var ncols = 50;
+        var i = 0;
+        var j = 0;
+        var clicked=[]
+		var offense = 0;
+		var defense = 0;
+
+        for(i=0;i<nrows;i++)
+        {
+          var text = '<div class="row row-no-margin" style="height:10px">';
+          for(j = 0;j<ncols;j++)
+          {
+            text+= '<div style="width: 2%;display: inline-block; height:10px" data-x='+i+' data-y='+j+'></div>'
+          }
+          text+='</div>'
+          $('#chart1').append(text)
+          // text = '<div class="row" style="height:10px">';
+          // for(j = 25;j<ncols;j++)
+          // {
+          //   text+= '<div style="width: 4%;display: inline-block; height:10px; background:red" data-x='+i+' data-y='+j+'></div>'
+          // }
+          // $("#secondPart").append(text)
+        }
+
+          //$('#chart1').click(function(e) { 
+			$('#chart1').click(function(e) {
+var typev = "";
+var typevalue = "";
+var typeFlag = true;
+
+           $('input:checkbox[name=type]').each(function() 
+{    
+    if($(this).is(':checked'))
+    {
+      typeFlag=false
+      typev = $(this).val();
+    }
+}); 
+            if($('#sel1').val() == 0)
+            {
+              alert("Please Select a Player");
+              return
+            }
+
+            if(typeFlag)
+            {
+              alert("Please Check Offense/Defense");
+              return
+            }
+
+            if(typev == 1)
+            {
+				if (offense == 5) {
+				alert("Too many players on offense");
+					return
+				} else {
+					typevalue = "Offense";
+					offense+=1;
+				}
+            }
+            else
+            {
+				if (defense == 5) {
+				alert("too many players on defense");
+					return
+				} else {
+				  typevalue = "Defense";
+				  defense+=1;
+				}
+            }
+
+            var x = $(e.target).attr("x");
+			var y = $(e.target).attr("y");
+			if(clicked.length == 9)
+            {
+			  clicked.push({"player":$('#sel1').val(), "type":typevalue,"x":x/10,"y":y/10});
+				alert("You added " + $('#sel1').val());
+				generateHeatMap(clicked);
+				blank_grid();
+				offense = 0;
+				defense = 0;
+				
+			  //alert("You have selected 10 players. You cannot add any more players now.");
+              //return
+            }
+            else
+            {
+              clicked.push({"player":$('#sel1').val(), "type":typevalue,"x":x/10,"y":y/10});
+              alert("You added " + $('#sel1').val());
+			  partial_grid(clicked);
+            }
+            // $("#sel1").find('option:selected').remove();
+
+      // alert($(this).attr('data-x'));
+      // console.log($(this).attr('data-x'));
+      // console.log(e);
+
+      });
+      //   i = 0;
+      //   var j = 0;
+      //   clicked2=[]
+
+
+      //  for(i=0;i<nrows;i++)
+      //   {
+      //     var text = '<div class="row">';
+      //     for(j = 0;j<ncols/2;j++)
+      //     {
+      //       text+= '<div style="width: 4%;display: inline-block; height:10px; background:green" data-x='+i+' data-y='+j+'></div>'
+      //     }
+      //     text+='</div>'
+      //     $("#firstPart2").append(text)
+      //     text = '<div class="row">';
+      //     for(j = 25;j<ncols;j++)
+      //     {
+      //       text+= '<div style="width: 4%;display: inline-block; height:10px; background:green" data-x='+i+' data-y='+j+'></div>'
+      //     }
+      //     $("#secondPart2").append(text)
+      //   }
+
+      //     $('#courtField2').click(function(e) {  
+      //       clicked2.push({"x":$(e.target).attr('data-x'),"y":$(e.target).attr('data-y')});
+      // // alert($(this).attr('data-x'));
+      // // console.log($(this).attr('data-x'));
+      // // console.log(e);
+      // alert(clicked2.length);
+    // });
+      $.ajax({
+            type: "GET",
+            url: "http://localhost:8000/myapp2/players/",
+            dataType: 'json',
+            success: function(data){
+                // Parse the returned json data
+                // var opts = $.parseJSON(data);
+                //console.log(data);
+                // Use jQuery's each to iterate over the opts value
+                $.each(data["response"], function(i, d) {
+                    // You will need to alter the below to get the right values from your json object.  Guessing that d.id / d.modelName are columns in your carModels data
+                    for (var i = 0; i < d.length; i++) {
+                      //console.log(d[i].Player)
+                      if(d[i].Player == "PLAYER")
+                      {
+                          $('#sel1').append('<option value="' + i + '">' + d[i].Player + '</option>');
+                      }
+                      else
+                      {
+                          $('#sel1').append('<option value="' + d[i].Player + '">' + d[i].Player + '</option>');
+                      }
+
+                    }
+                    ;
+                });
+            }
+        });
+      });
+    </script>
+    <!-- <script type="text/javascript">
+      document.addEventListener('DOMContentLoaded',function() {
+      document.querySelector('select[name="playername"]').onchange=changeEventHandler;
+      },false);
+
+      function changeEventHandler(event) {
+      // You can use “this” to refer to the selected element.
+      if(!event.target.value) alert('Please Select One');
+      else alert('You like ' + event.target.value); 
+    }
+    </script> -->
+
+</body>
+
+</html>

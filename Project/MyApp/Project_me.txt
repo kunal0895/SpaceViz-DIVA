@@ -1,0 +1,300 @@
+ 1065  ls
+ 1066  cd mysite
+ 1067  ls
+ 1068  gedit urls.py
+ 1069  ls
+ 1070  cd ..
+ 1071  ls
+ 1072  python manage.py runserver
+ 1073  ls
+ 1074  cd mysite
+ 1075  gedit urls.py
+ 1076  cd ..
+ 1077  python manage.py runserver
+ 1078  cd mysite
+ 1079  gedit urls.py
+ 1080  cd ..
+ 1081  python manage.py runserver
+ 1082  cd polls
+ 1083  gedit urls.py
+ 1084  cd ..
+ 1085  cd mysite/
+ 1086  gedit urls.py
+ 1087  cd ..
+ 1088  python manage.py runserver
+ 1089  ls
+ 1090  cd mysite
+ 1091  ls
+ 1092  gedit settings.py
+ 1093  s
+ 1094  ls
+ 1095  cd ..
+ 1096  python manage.py migrate
+ 1097  cd polls
+ 1098  ls
+ 1099  gedit models.py
+ 1100  cd ..
+ 1101  ls
+ 1102  cd mysite
+ 1103  gedit settings.py
+ 1104  cd ..
+ 1105  python manage.py makemigrations polls
+ 1106  cd polls
+ 1107  gedit models.py 
+ 1108  cd ..
+ 1109  python manage.py makemigrations polls
+ 1110  python manage.py sqlmigrate polls 0001
+ 1111  python manage.py migrate
+ 1112  cd ..
+ 1113  ls
+ 1114  django-admin startapp Myapp
+ 1115  ls
+ 1116  cd Myapp
+ 1117  ls
+ 1118  gedit models.py
+ 1119  ls
+ 1120  cd migrations
+ 1121  ls
+ 1122  cd ..
+ 1123  ls
+ 1124  cd ..
+ 1125  ls
+ 1126  cd mysite
+ 1127  ls
+ 1128  cd cd ..
+ 1129  cd myapp
+ 1130  ls
+ 1131  cd ..
+ 1132  cd myApp
+ 1133  cd Myapp
+ 1134  ls
+ 1135  cd ..
+ 1136  ls
+ 1137  cd ..
+ 1138  ls
+ 1139  cd Project
+ 1140  django-admin startproject MyApp
+ 1141  cd MyApp
+ 1142  ls
+ 1143  cd MyApp
+ 1144  ls
+ 1145  cd ..
+ 1146  ls
+ 1147  django-admin startApp myapp
+ 1148  django-admin startapp myapp
+ 1149  ls
+ 1150  cd myapp
+ 1151  ls
+ 1152  gedit models.py
+ 1153  cd ..
+ 1154  ls
+ 1155  python manage.py makemigrations
+ 1156  cd MyApp
+ 1157  c
+ 1158  ls
+ 1159  cd myapp
+ 1160  ls
+ 1161  cd ..
+ 1162  ls
+ 1163  cd MyApp
+ 1164  ls
+ 1165  cd MyApp
+ 1166  ls
+ 1167  gedit settings.py
+ 1168  cd ..
+ 1169  la
+ 1170  ls
+ 1171  python manage.py makemigrations
+ 1172  python manage.py migrate
+ 1173  ls
+ 1174  cd MyApp
+ 1175  ls
+ 1176  cd ..
+ 1177  cd myapp
+ 1178  ls
+ 1179  gedit models.py
+ 1180  cd ..
+ 1181  ls
+ 1182  cd MyApp
+ 1183  ls
+ 1184  python manage.py makemigrations --empty myapp
+ 1185  cd myapp
+ 1186  cd migrations
+ 1187  ls
+ 1188  gedit 0002_auto_20180325_1630.py
+ 1189  cd ..
+ 1190  ls
+ 1191  cd ..
+ 1192  ls
+ 1193  python manage.py migrate
+ 1194  pip install djangorestframework
+ 1195  ls
+ 1196  cd myapp
+ 1197  ls
+ 1198  cd ..
+ 1199  cd MyApp
+ 1200  ls
+ 1201  gedit settings.py
+ 1202  ls
+ 1203  cd ..
+ 1204  cd myapp
+ 1205  ls
+ 1206  gedit serializer.py
+ 1207  gedit views.py
+ 1208  history [5]
+ 1209  history 5
+ 1210  cd ..
+ 1211  pwd
+ 1212  history 200 > projecthistory.txt
+ 1213  gedit projecthistory.txt 
+ 1214  cd Project
+ 1215  ls
+ 1216  cd MyApp
+ 1217  ls
+ 1218  cd myapp
+ 1219  ls
+ 1220  cd ..
+ 1221  cd MyApp
+ 1222  ls
+ 1223  gedit settings.py
+ 1224  cd ..
+ 1225  cd myapp
+ 1226  ls
+ 1227  gedit models.py
+ 1228  cd ..
+ 1229  ls
+ 1230  cd myapp
+ 1231  ls
+ 1232  cd ..
+ 1233  ls
+ 1234  cd MyApp
+ 1235  ls
+ 1236  cd MyApp
+ 1237  ls
+ 1238  cd ..
+ 1239  cd myapp
+ 1240  ls
+ 1241  cd migrations
+ 1242  ls
+ 1243  gedit 0002_auto_20180325_1630.py
+ 1244  cd ..
+ 1245  cd Project/
+ 1246  ls
+ 1247  cd MyApp/
+ 1248  ls
+ 1249  cd myapp
+ 1250  ls
+ 1251  cd migrations
+ 1252  ls
+ 1253  gedit 0002_auto_20180325_1630.py
+ 1254  cd ..
+ 1255  ls
+ 1256  gedit serializer.py 
+ 1257  ls
+ 1258  cd ..
+ 1259  ls
+ 1260  python manage.py runserver
+ 1261  ls
+ 1262  cd myapp
+ 1263  ls
+ 1264  gedit urls.py
+ 1265* 
+ 1266  ls
+ 1267  python manage.py runserver
+ 1268  cd myApp
+ 1269  cd MyApp
+ 1270  ls
+ 1271  gedit urls.py
+ 1272  cd ..
+ 1273  ls
+ 1274  python manage.py runserver
+ 1275  cd myapp
+ 1276  ls
+ 1277  gedit serializer.py 
+ 1278  gedit utils.py
+ 1279  gedit models.py
+ 1280  cd ..
+ 1281  ls
+ 1282  python manage.py runserver
+ 1283  cd myAPp
+ 1284  cd MyApp
+ 1285  ls
+ 1286  cd ..
+ 1287  cd myapp
+ 1288  ls
+ 1289  gedit serializer.py
+ 1290  cd ..
+ 1291  python manage.py runserver
+ 1292  ls
+ 1293  cd MyApp
+ 1294  ls
+ 1295  gedit settings.py
+ 1296  cd ..
+ 1297  python manage.py runserver
+ 1298  ls
+ 1299  cd myapp
+ 1300  ls
+ 1301  gedit models.py
+ 1302  gedit utils.py
+ 1303  gedit serializer.py
+ 1304  gedit urls.py
+ 1305  gedit views
+ 1306  gedit views.py
+ 1307  cd ..
+ 1308  python manage.py runserver
+ 1309  gedit myapp
+ 1310  ls
+ 1311  cd myapp
+ 1312  ls
+ 1313  gedit models.py
+ 1314  cd ..
+ 1315  cd MyApp/
+ 1316  ls
+ 1317  gedit settings.py
+ 1318  gedit urls.py
+ 1319  cd myapp
+ 1320  cd ..
+ 1321  cd myapp
+ 1322  ls
+ 1323  gedit urls.py
+ 1324  cd ..
+ 1325  python manage.py migrate
+ 1326  python manage.py makemigrations
+ 1327  python manage.py runserver
+ 1328  gedit settings.py
+ 1329  ls
+ 1330  cd MyApp/
+ 1331  gedit settings.py
+ 1332  cd ..
+ 1333  python manage.py runserver
+ 1334  cd ..
+ 1335  cd MyApp
+ 1336  ls
+ 1337  cd MyApp
+ 1338  ls
+ 1339  gedit settings.py
+ 1340  gedit urls.py
+ 1341  gedit wsgi.py
+ 1342  cd ..
+ 1343  cd myapp
+ 1344  ls
+ 1345  gedit admin.py
+ 1346  gedit models.py
+ 1347  gedit serializer.py
+ 1348  gedit urls.py
+ 1349  gedit views.py
+ 1350  gedit apps.py 
+ 1351  gedit utils.py
+ 1352  cd ..
+ 1353  ls
+ 1354  gedit MyApp
+ 1355  cd MyApp/
+ 1356  ls
+ 1357  gedit settings.py
+ 1358  cd ..
+ 1359  python manage.py runserver
+ 1360  python manage.py migrate
+ 1361  python manage.py makemigrations
+ 1362  python manage.py migrate
+ 1363  python manage.py runserver
+ 1364  history 300 > Project_me.txt
